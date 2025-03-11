@@ -25,7 +25,7 @@ async function showDefault() {
   displayData(images);
   // loadmore increases the page number calls getData with updated API then calls displayData again with updated images array
   const loadMore = document.createElement("button");
-  loadMore.innerText = "Load Mmore...";
+  loadMore.innerText = "Load More...";
   loadMore.classList.add("load-more");
   //  event on load more
   loadMore.addEventListener("click", async (e) => {
@@ -56,7 +56,7 @@ form.addEventListener("submit", async (e) => {
   // on submit of form there will be a load more button arival
   // loadmore increases the page number calls getData with updated API then calls displayData again with updated images array
   const loadMore = document.createElement("button");
-  loadMore.innerText = "Load Mmore...";
+  loadMore.innerText = "Load More...";
   loadMore.classList.add("load-more");
   //! event on loadMore button
   loadMore.addEventListener("click", async (e) => {
