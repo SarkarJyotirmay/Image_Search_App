@@ -18,7 +18,7 @@ showDefault(); // display dummy data fteched from api by default
 // showDefault Function show some dummy data here in this case avengers
 // this function is an extension of the project read this function later if got confused
 async function showDefault() {
-  let data = await getData(example_API);
+  let data = await getData(example_API); 
   data = data.results;
   images = data;
   //  console.log(data);
@@ -65,8 +65,7 @@ form.addEventListener("submit", async (e) => {
     const query = input.value;
     const data = await getData(API + query);
     // fixing bug of rerendering of images
-    images = images.concat(images, data.results);
-    images.splice(0, 10);
+    images = images.concat(data.results);
     console.log(images);
     displayData(images);
   });
